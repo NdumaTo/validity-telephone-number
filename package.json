@@ -1,6 +1,6 @@
 {
   "name": "validity-telephone-number",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A validity style validator for validating telephone numbers",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,6 @@
   "homepage": "https://github.com/NdumaTo/validity-telephone-number#readme",
   "devDependencies": {
     "mocha": "^7.0.1",
-
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
@@ -34,6 +33,7 @@
   "dependencies": {
     "awesome-phonenumber": "^2.25.0"
   },
-
-  "files": ["index.js"]
+  "files": [
+    "index.js"
+  ]
 }
