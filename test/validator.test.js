@@ -86,15 +86,12 @@ describe('Telephone number validity', function() {
       'number',
       'Telephone number',
       { number: { object: '+44-Fake-Number' } },
-      (err, message) => {
-        assert.deepEqual(err, null)
-        assert.deepEqual(
-          message,
-          'Telephone number must be a valid telephone number'
-        )
-      }
+      (err, message) => {}
     ]
 
-    assert.throws(validate(...fixture))
+    assert.throws(() => validate(...fixture), {
+      message: 'Telephone number must be a string',
+      name: 'TypeError'
+    })
   })
 })
