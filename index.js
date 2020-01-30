@@ -1,6 +1,11 @@
-import phoneNumber from 'awesome-phonenumber'
+const phoneNumber = require('awesome-phonenumber')
 
-export function phoneNumberValidator(key, keyDisplayName, object, cb) {
+module.exports = function phoneNumberValidator(
+  key,
+  keyDisplayName,
+  object,
+  cb
+) {
   let value = (object[key] && object[key]) || ''
 
   if (typeof value != 'string') throw new TypeError(`${[key]} must be a string`)
@@ -11,7 +16,7 @@ export function phoneNumberValidator(key, keyDisplayName, object, cb) {
 
   const validatePhoneNumber = new phoneNumber(value)
 
-  if (validatePhoneNumber.isValid()) cb(null)
+  if (validatePhoneNumber.isValid()) return cb(null)
 
-  cb(null, `${key} must be a valid telephone number`)
+  cb(null, `${keyDisplayName} must be a valid telephone number`)
 }
