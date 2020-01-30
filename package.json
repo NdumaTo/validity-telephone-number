@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "awesome-phonenumber": "^2.25.0",
+    "mocha": "^7.0.1",
     "validity": "^1.1.1"
   }
 }
