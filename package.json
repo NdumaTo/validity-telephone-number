@@ -1,0 +1,35 @@
+{
+  "name": "validity-telephone-number",
+  "version": "1.0.0",
+  "description": "A validity style validator for validating telephone numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NdumaTo/validity-telephone-number.git"
+  },
+  "keywords": [
+    "Validity",
+    "validator",
+    "telephone",
+    "numbers"
+  ],
+  "author": "Tola Ndumari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NdumaTo/validity-telephone-number/issues"
+  },
+  "homepage": "https://github.com/NdumaTo/validity-telephone-number#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "awesome-phonenumber": "^2.25.0",
+    "validity": "^1.1.1"
+  }
+}
