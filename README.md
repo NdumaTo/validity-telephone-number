@@ -14,7 +14,7 @@ Below is example usage of the telephone number validator:
 
 ```javascript
 const phoneNumber = require('validity-telephone-number'),
-schemata = require('schemata)
+schemata = require('schemata')
 
 var schema = schemata (
   {
