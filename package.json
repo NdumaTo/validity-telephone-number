@@ -1,6 +1,6 @@
 {
   "name": "validity-telephone-number",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A validity style validator for validating telephone numbers",
   "main": "index.js",
   "scripts": {
