@@ -11,7 +11,7 @@ export function phoneNumberValidator(key, keyDisplayName, object, cb) {
 
   const validatePhoneNumber = new phoneNumber(value)
 
-  if (validatePhoneNumber.isValid()) return cb(null)
+  if (validatePhoneNumber.isValid()) cb(null)
 
-  return cb(null, `Please enter a valid telephone number`)
+  cb(null, `${key} must be a valid telephone number`)
 }
