@@ -21,7 +21,7 @@ var schema = schemata (
     telephone:
     {
       type: String
-      , validators: { [ phoneNumber ] }
+      , validators: [ phoneNumber ]
     }
   }
 )

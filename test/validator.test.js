@@ -80,4 +80,21 @@ describe('Telephone number validity', function() {
 
     validate(...fixture)
   })
+
+  it('should thow an error if the type of input is not a string', function() {
+    const fixture = [
+      'number',
+      'Telephone number',
+      { number: { object: '+44-Fake-Number' } },
+      (err, message) => {
+        assert.deepEqual(err, null)
+        assert.deepEqual(
+          message,
+          'Telephone number must be a valid telephone number'
+        )
+      }
+    ]
+
+    assert.throws(validate(...fixture))
+  })
 })

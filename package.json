@@ -4,7 +4,8 @@
   "description": "A validity style validator for validating telephone numbers",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -- -R spec"
+    "test": "mocha -- -R spec",
+    "prepublish": "mocha -- -R spec"
   },
   "repository": {
     "type": "git",
@@ -23,14 +24,16 @@
   },
   "homepage": "https://github.com/NdumaTo/validity-telephone-number#readme",
   "devDependencies": {
+    "mocha": "^7.0.1",
+
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "prettier": "^1.19.1"
   },
   "dependencies": {
-    "awesome-phonenumber": "^2.25.0",
-    "mocha": "^7.0.1",
-    "validity": "^1.1.1"
-  }
+    "awesome-phonenumber": "^2.25.0"
+  },
+
+  "files": ["index.js"]
 }
