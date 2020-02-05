@@ -89,9 +89,13 @@ describe('Telephone number validity', function() {
       (err, message) => {}
     ]
 
-    assert.throws(() => validate(...fixture), {
-      message: 'Telephone number must be a string',
-      name: 'TypeError'
-    })
+    try {
+      validate(...fixture)
+    } catch (e) {
+      assert.strictEqual(e.message, 'Telephone number must be a string')
+      return
+    }
+
+    assert.ifError(new Error('Testing throw'))
   })
 })
